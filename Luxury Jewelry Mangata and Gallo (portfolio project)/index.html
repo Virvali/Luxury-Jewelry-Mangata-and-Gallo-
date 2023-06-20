@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>    <!--adding this project to GitHub at some point is a good idea-->    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Mangata and Gallo</title>
+        <meta name="title" content="Mangata and Gallo">
+        <meta name="author" content="Aleksandr Sedykh">
+        <meta name="description" content='A website for a fictional client, "Luxury Jewelry: Mangata and Gallo", created as part of the completion of the Graded Assessment for the "HTML and CSS in Depth" course from "Meta".'>
+
+        <meta name="rating" content="save for kids">
+
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="styles.css">
+
+        <link rel="icon" href="Assets/iconHR.png" type="image">
+        
+    </head> <!--try and add some preprocessors to the css file-->
+    <body> <!--add breakpoints-->
+        <header>
+            <div>
+                <img id="headerLogo" src="Assets/logoBig.png" alt="Mangata and Gallo Logo">
+            </div>            
+            <nav>
+                <ul>
+                    <li><a href="index.html">Main Page</a></li>
+                    <li><a href="placeholder.html">Our Products</a></li>
+                    <li><a href="placeholder.html">Our Partners</a></li>
+                    <li><a href="placeholder.html">About Us</a></li>
+                </ul>
+            </nav>
+        </header>    
+        <main>
+            <section>
+                <article>
+                    <h1>Summer Sale</h1>
+                    <div class="galleryContainerContainer"><!--add infinite scrolling, make it so no cut of images are shown when scrolling/resizing-->
+                        <div class="galleryContainer"><!--change scrolling to looped animation, add scroll function somewhere else-->
+                            <a href="placeholder.html">
+                                <div class="imageGallery"><!--more images can be added, having <6 is unsupported so far-->
+                                    <img src="Assets/homeGallery1.1.jpg" alt="Item on Sale preview. Currently: Gold and silver gemsencrusted rings.">
+                                    <img src="Assets/homeGallery1.2.jpg" alt="Item on Sale preview. Currently: 3 silver gems encrusted rings.">
+                                    <img src="Assets/homeGallery1.3.jpg" alt="Item on Sale preview. Currently: A silver gems encrusted necklace.">
+                                    <img src="Assets/homeGallery1.4.jpg" alt="Item on Sale preview. Currently: A silver pendant and silver earrings. All ring-shaped and gems encrusted.">
+                                    <img src="Assets/homeGallery1.5.jpg" alt="Item on Sale preview. Currently: 2 gold gems encrusted rings.">
+                                    <img src="Assets/homeGallery1.6.jpg" alt="Item on Sale preview. Currently: 2 silver gems encrusted rings.">                                                            
+                                </div><!--only slightly brakes after change of viewport width, 1-2 clicks on either of the buttons fixes it however-->
+                            </a>                            
+                        </div>
+                        <button class="iGscrollButton scrollLeft">&lt;</button>
+                        <button class="iGscrollButton scrollRight">&gt;</button>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <a href="placeholder.html">
+                        <h2>New Collection</h2>
+                        <div>
+                            <h3>Be the First to check it out!</h3>
+                            <img src="Assets/article2preview.jpg" alt="New collection preview">
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="placeholder.html">
+                        <h2>Top Sellers</h2>
+                        <div>
+                            <h3>Our Best of the Best!</h3>
+                            <img src="Assets/article3preview.jpg" alt="Top Sellers preview">
+                        </div>
+                    </a>
+                </article>
+                <article>
+                    <a href="placeholder.html">
+                        <h2>Low Stock</h2>
+                        <div>
+                            <h3>Hurry up before it's all gone!</h3>
+                            <img src="Assets/article4preview.jpg" alt="Low Stock preview">
+                        </div>
+                    </a>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <div id="footerLogo">
+                <img src="Assets/logoSmall.png" alt="Mangata and Gallo Logo">
+            </div>
+            <div id="footerContacts">
+                <ul>
+                    <li class="mediaLink twitter"><a href="placeholder.html" title="Our Twitter"><img src="Assets/mediaLinkTwitter.png"></a></li>
+                    <li class="mediaLink telegram"><a href="placeholder.html" title="Our Telegram"><img src="Assets/mediaLinkTelegram.png"></a></li>
+                    <li class="mediaLink whatsapp"><a href="placeholder.html" title="Our WhatsApp"><img src="Assets/mediaLinkWhatsapp.png"></a></li>
+                    <li class="mediaLink email"><a href="placeholder.html" title="send us an Email"><img src="Assets/mediaLinkEmail.png"></a></li>
+                    <li class="mediaLink location"><a href="placeholder.html" title="Our location"><img src="Assets/mediaLinkLocation.png"></a></li>
+                </ul>
+            </div>
+            <div id="footerCopyright">
+                <p class="notranslate">Copyright© Mangata and Gallo</p>
+            </div>
+        </footer>
+
+        <script src="code.js"></script>
+    </body>
+</html>
